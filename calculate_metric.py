@@ -46,6 +46,6 @@ if __name__ == "__main__":
     if miou_mode == 0 or miou_mode == 2:
         print("=================> Get miou.")
 
-        hist, IoUs, PA_Recall, Precision , F1_score= compute_mIoU(gt_dir, pred_dir, image_ids, num_classes, name_classes)  # 执行计算mIoU的函数
+        hist, IoUs, PA_Recall, Precision , F1_score= compute_mIoU(gt_dir, pred_dir, image_ids, num_classes, name_classes)
 
         show_results(miou_out_path, hist, IoUs, PA_Recall, Precision, F1_score, name_classes)
